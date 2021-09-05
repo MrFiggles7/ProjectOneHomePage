@@ -1,6 +1,9 @@
 #header{
   background-image: linear-gradient(to right, rgba($color-white, .4), rgba($color-white, .4)),
-  url("../../background.jpg");
+  url("/img/computerthing.jpg");
+  -webkit-background-image: linear-gradient(to right, rgba($color-white, .4), rgba($color-white, .4)),
+  url("/img/computerthing.jpg");
+  -webkit-background-size: cover;
   background-size: cover;
   overflow: hidden;
 }
@@ -12,6 +15,7 @@
 
 
 .height-70{
+  margin-top: 6rem;
   height: 70vh;
 
   @include media-breakpoint-down(md){
