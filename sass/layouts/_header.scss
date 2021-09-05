@@ -1,0 +1,80 @@
+#header{
+  background-image: linear-gradient(to right, rgba($color-white, .4), rgba($color-white, .4)),
+  url("../../img/background.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.height-15{
+  height: 15vh;
+}
+
+
+.height-70{
+  height: 70vh;
+
+  @include media-breakpoint-down(md){
+    height: 65vh;
+  }
+  @include media-breakpoint-down(sm){
+    height: 50vh;
+  }
+  @include media-breakpoint-down(xs){
+    height: 48vh;
+  }
+}
+
+.height-15{
+  height: 15vh;
+
+  @include media-breakpoint-down(md){
+    height: 15vh;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 7.5rem;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 6rem;
+  }
+}
+
+
+.header{
+
+  &-primary{
+
+    h2{
+      font-size: 10rem;
+      font-family: "Kaisei HarunoUmi";
+
+      @include media-breakpoint-down(xl){
+        font-size: 9rem;
+      }
+      @include media-breakpoint-down(md){
+        font-size: 8rem;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 7.5rem;
+      }
+      @include media-breakpoint-down(xs){
+        font-size: 6rem;
+      }
+    }
+
+  }
+
+  &-secondary{
+    font-size: 2rem;
+    font-style: italic;
+    font-family: "Kaisei HarunoUmi";
+
+    @include media-breakpoint-down(xl){
+      font-size: 1.8rem;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 1.4rem;
+      text-align: right;
+    }
+  }
+}

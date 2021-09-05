@@ -1,0 +1,39 @@
+.navbar {
+  font-family: "Kaisei HarunoUmi";
+
+  z-index: 2;
+  &-brand {
+    font-family: "Kaisei HarunoUmi";
+
+    & h1{
+      font-size: 2rem;
+      font-weight: 900;
+
+      @include media-breakpoint-down(lg){
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+  font-size: 1.1rem;
+  transition: all .2s;
+
+  @include media-breakpoint-down(xl){
+    font-size: 1.05rem;
+  }
+
+  @include media-breakpoint-down(lg){
+    font-size: 1rem;
+  }
+
+  &:hover{
+    color: rgba($color-tertiary, 1);
+  }
+
+  &:focus{
+    color: rgba($color-tertiary, 1);
+  }
+}

@@ -1,0 +1,23 @@
+.btn{
+  font-family: "Kaisei HarunoUmi";
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+
+  @include media-breakpoint-up(md){
+    font-size: 1.8rem;
+  }
+
+  &-primary{
+    background-color: $color-tertiary;
+    border: none;
+    color: black;
+
+    &:hover{
+      box-shadow: .1rem .1rem .25rem black;
+    }
+  }
+}
+
+
